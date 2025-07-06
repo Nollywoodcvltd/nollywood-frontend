@@ -1,0 +1,25 @@
+.parent {
+    border: 2px solid #ffb332;
+    border-radius: 20px;
+    
+}
+.cv-image {
+    height: 120px !important;
+    width: 120px !important;
+    border-radius: 100% !important;
+}
+@media screen and (max-width: 767px) {
+    .nuella {
+        font-size: 12px;
+    }
+    .nuella2 {
+        font-size: 12px;
+    }
+    .responsive-input {
+        min-width: 80px !important;
+    }
+    .form-label {
+        font-size: 10px !important;
+        // width: ;
+    }
+}

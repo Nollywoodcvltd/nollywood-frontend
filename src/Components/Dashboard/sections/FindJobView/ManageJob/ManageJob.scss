@@ -1,0 +1,77 @@
+.builder {
+    background-color: #fdf0db;
+    border-radius: 15px;
+    color: black;
+}
+
+/* Add these styles to your CSS file */
+// .builder {
+//   background-color: #fff;
+//   border: 1px solid #eaeaea;
+//   transition: all 0.3s ease;
+// }
+
+// .builder.hover-effect:hover {
+//   transform: translateY(-5px);
+//   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+// }
+
+.img-fluid {
+  width: 100%;
+//   height: auto;
+  object-fit: cover;    
+}
+
+.rounded {
+  border-radius: 0.5rem !important;
+}
+
+// // recommended
+// .job-text {
+//   font-size: 10px;
+// }
+// .job-text span{
+//   border: 1px solid black;
+//   border-radius: 5px;
+//   padding: 1px;
+// }
+// .kola {
+//   font-size: 10px;
+//   text-align: center;
+//   border-radius: 10px;
+// }
+
+.job-container {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.job-text {
+    font-size: 12px;
+}
+
+.job-text span {
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    padding: 2px 8px;
+    background-color: transparent;
+}
+
+.kola {
+    font-size: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 576px) {
+  .job-text span, a {
+    padding: 1px 2px;
+    font-size: 8px;
+  }
+  // .builder {
+  //   // padding: 0.3rem !important;
+  // }
+  .builder .brace {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,146 @@
+.signup-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-wrapper {
+  width: 90%;
+  max-width: 1100px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.signup-image {
+  background: url('/assets/IMG_0535.JPG') no-repeat center center;
+  // background: url('../../assets/Rectangle_1.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.signup-form {
+  background: #f8f9fa;
+  padding: 2rem;
+  text-align: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  span {
+    color: #ffb332;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: none;
+    &.big-screen {
+      color: #fff;
+      display: block;
+      padding: 50px;
+    }
+  }
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #514f4f;
+  img {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+
+.divider {
+  margin: 1rem 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line {
+  width: 45%;
+  height: 1px;
+  background-color: #514f4f;
+}
+
+.form-label {
+  text-align: left;
+  width: 100%;
+}
+
+.form-check {
+  cursor: pointer;
+}
+
+.form-check-label {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffb332;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem 0;
+
+  .password-requirements-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .password-requirements {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+
+      .check-icon {
+        color: grey;
+
+        &.length-check,
+        &.char-check,
+        &.upper-check,
+        &.num-check {
+          transition: all 0.3s ease;
+          color: #ffb332;
+        }
+      }
+
+      p {
+        font-size: 0.7rem;
+        color: #6c757d;
+        @media screen and (min-width: 992px) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #ffb332;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  &:hover {
+    background-color: #fda205;
+  }
+}
+
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  a {
+    color: #ffb332;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,15 @@
+* {
+  // overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+
+  input {
+    color: black;
+  }
+}
+.app {
+  height: 100vh;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

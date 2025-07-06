@@ -1,0 +1,672 @@
+.home {
+  width: 100%;
+  overflow: hidden;
+
+  .nollywood-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .about {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .about-title {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          display: inline;
+          text-align: center;
+          width: 60%;
+
+          @media screen and (min-width: 992px) {
+            width: 40%;
+            font-size: 24px;
+          }
+
+          .highlight {
+            color: #ffb332;
+          }
+        }
+
+        .about-description-box {
+          width: 90%;
+          @media screen and (min-width: 992px) {
+            width: 60%;
+
+            .about-description {
+              font-size: 16px;
+            }
+          }
+
+          .about-description {
+            font-size: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .bottom {
+        width: 100%;
+        height: 300px;
+        // background: url('../../assets/about-image.png') no-repeat center center;
+        background: url('/assets/ANE_1657.JPG') no-repeat center center;
+        background-size: cover;
+
+        @media screen and (min-width: 992px) {
+          width: 70%;
+        }
+      }
+    }
+
+    .talents {
+      width: 100%;
+      margin: auto;
+
+      @media screen and (min-width: 992px) {
+        width: 70%;
+      }
+
+      .description {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+          font-size: 16px;
+          font-weight: bold;
+
+          span {
+            display: block;
+          }
+
+          .highlight {
+            color: #ffb332;
+          }
+
+          @media screen and (min-width: 992px) {
+            font-size: 20px;
+            .highlight {
+              display: inline;
+            }
+          }
+        }
+        .right {
+          font-size: 12px;
+
+          @media screen and (min-width: 992px) {
+            font-size: 14px;
+          }
+          // width: 50%;
+
+          span {
+            display: block;
+          }
+        }
+      }
+
+      .talents-box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @media screen and (min-width: 992px) {
+          height: 250px;
+        }
+
+        .card {
+          width: 45%;
+          height: 200px;
+          border-radius: 32px;
+          // margin-bottom: 20px;
+
+          &.active {
+            // transform: scale(1.05);
+            // transition: all 0.3s ease;
+
+            .card-top {
+              height: 80%;
+              border-radius: 32px 32px 0 0;
+              transition: all 0.3s ease;
+            }
+
+            .card-bottom {
+              height: 20%;
+              border-radius: 0 0 32px 32px;
+              transition: all 0.3s ease;
+              font-size: 11px;
+            }
+          }
+
+          @media screen and (min-width: 992px) {
+            width: 22.5%;
+            height: 250px;
+
+            &:hover {
+              // transform: scale(1.1);
+              // transition: all 0.3s ease;
+              .card-top {
+                height: 80%;
+                border-radius: 32px 32px 0 0;
+                transition: all 0.3s ease;
+              }
+              .card-bottom {
+                height: 20%;
+                padding: 0 8px 8px 8px;
+                border-radius: 0 0 32px 32px;
+                transition: all 0.3s ease;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .card-top {
+            width: 100%;
+            height: 100%;
+            border-radius: 32px;
+            background: no-repeat center center;
+            background-size: cover;
+
+            .talent-img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .card-bottom {
+            width: 100%;
+            height: 0;
+            border-radius: 0 0 32px 32px;
+            // padding: 0 15px;
+            z-index: 0;
+
+            .name-and-age-box {
+              display: flex;
+              justify-content: space-around;
+            }
+            background-color: #ffb332;
+          }
+        }
+      }
+
+      .explore-btn {
+        background-color: #ffb332;
+        border-radius: 50px;
+        padding: 5px 10px;
+        margin: 15px 0;
+        font-size: 12px;
+
+        @media screen and (min-width: 992px) {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .what-we-offer-box {
+      width: 100%;
+      margin-top: 25px;
+
+      .what-we-offer {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 992px) {
+          width: 70%;
+        }
+
+        .header {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 50px 0;
+
+          .title {
+            font-weight: bold;
+            font-size: 18;
+
+            @media screen and (min-width: 992px) {
+              font-size: 22px;
+            }
+          }
+
+          .description {
+            text-align: center;
+
+            font-size: 14px;
+
+            @media screen and (min-width: 992px) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .services {
+          width: 100%;
+          // height: 200px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+          .service {
+            width: 45%;
+            height: 130px;
+
+            @media screen and (min-width: 992px) {
+              width: 22.5%;
+            }
+
+            .top {
+              width: 100%;
+              height: 40%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+
+              .img-box {
+                width: 40%;
+                height: 100%;
+                background-color: grey;
+                border-radius: 15px;
+              }
+            }
+
+            .bottom {
+              width: 100%;
+              height: 60%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+
+              p {
+                text-align: center;
+                font-size: 12px;
+
+                @media screen and (min-width: 992px) {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .why-choose-us-box {
+      margin-top: 80px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+          font-weight: bold;
+          font-size: 18px;
+
+          @media screen and (min-width: 992px) {
+            font-size: 22px;
+          }
+        }
+
+        .description {
+          text-align: center;
+          font-size: 14px;
+
+          @media screen and (min-width: 992px) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .reasons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        .reason {
+          width: 100%;
+          height: 50px;
+          display: flex;
+
+          .bullet {
+            width: 5%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+
+            .circle {
+              width: 10px;
+              height: 10px;
+              margin-top: 8px;
+              border-radius: 50%;
+              background-color: black;
+            }
+          }
+
+          .text {
+            width: 95%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            font-size: 14px;
+
+            @media screen and (min-width: 992px) {
+              font-size: 16px;
+            }
+          }
+
+          @media screen and (min-width: 992px) {
+            width: 45%;
+          }
+        }
+      }
+    }
+
+    .table-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        font-weight: bold;
+        margin: 25px 0 50px 0;
+        font-size: 18px;
+
+        @media screen and (min-width: 992px) {
+          font-size: 22px;
+        }
+      }
+      .pricing-table {
+        border: solid #ffb332 1px;
+        // border-color: #ffb332 1px;
+        font-size: 14px;
+
+        @media screen and (min-width: 992px) {
+          font-size: 16px;
+        }
+
+        @media screen and (min-width: 992px) {
+          width: 40%;
+          margin: auto;
+        }
+
+        .double-row {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .testimonials {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .header {
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+
+          @media screen and (min-width: 992px) {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .carousel-box {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 25px;
+
+        @media screen and (min-width: 992px) {
+          width: 70%;
+        }
+
+        .testimonial-text {
+          font-size: 12px;
+
+          @media screen and (min-width: 992px) {
+            font-size: 16px;
+          }
+        }
+
+        .testimonial-owner {
+          font-size: 16px;
+
+          @media screen and (min-width: 992px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.home {
+  width: 100%;
+  overflow: hidden;
+
+  .nollywood-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .about {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .about-title {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          display: inline;
+          text-align: center;
+          width: 60%;
+
+          @media screen and (min-width: 992px) {
+            width: 40%;
+            font-size: 24px;
+          }
+
+          .highlight {
+            color: #ffb332;
+          }
+        }
+
+        .about-description-box {
+          width: 90%;
+          @media screen and (min-width: 992px) {
+            width: 60%;
+
+            .about-description {
+              font-size: 16px;
+            }
+          }
+
+          .about-description {
+            font-size: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .bottom {
+        width: 100%;
+        height: 300px;
+        background: url('/assets/ANE_1657.JPG') no-repeat center center;
+        background-size: cover;
+
+        @media screen and (min-width: 992px) {
+          width: 70%;
+        }
+      }
+    }
+
+    .talents {
+      width: 100%;
+      margin: auto;
+
+      @media screen and (min-width: 992px) {
+        width: 70%;
+      }
+
+      .description {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+          font-size: 16px;
+          font-weight: bold;
+
+          span {
+            display: block;
+          }
+
+          .highlight {
+            color: #ffb332;
+          }
+
+          @media screen and (min-width: 992px) {
+            font-size: 20px;
+            .highlight {
+              display: inline;
+            }
+          }
+        }
+        .right {
+          font-size: 12px;
+
+          @media screen and (min-width: 992px) {
+            font-size: 14px;
+          }
+
+          span {
+            display: block;
+          }
+        }
+      }
+
+      .talents-box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @media screen and (min-width: 992px) {
+          height: 250px;
+        }
+
+        .card {
+          width: 45%;
+          height: 200px;
+          border-radius: 32px;
+          margin-bottom: 20px;
+          position: relative;
+
+          @media screen and (min-width: 992px) {
+            width: 22.5%;
+            height: 250px;
+          }
+
+          .card-top {
+            width: 100%;
+            height: 80%;
+            border-radius: 32px 32px 0 0;
+            background: no-repeat center center;
+            background-size: cover;
+          }
+
+          .card-bottom {
+            width: 100%;
+            height: 20%;
+            border-radius: 0 0 32px 32px;
+            background-color: #ffb332;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8px;
+
+            .name-and-age-box {
+              display: flex;
+              justify-content: space-around;
+              width: 100%;
+              font-size: 11px;
+
+              @media screen and (min-width: 992px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .explore-btn {
+        background-color: #ffb332;
+        border-radius: 50px;
+        padding: 5px 10px;
+        margin: 15px 0;
+        font-size: 12px;
+
+        @media screen and (min-width: 992px) {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

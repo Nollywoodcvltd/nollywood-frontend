@@ -1,0 +1,72 @@
+.customer-support {
+  padding: 2rem;
+
+  .col {
+    height: 100%;
+    display: flex;
+
+    @media (max-width: 992px) {
+      width: 50%;
+    }
+
+    .support-card {
+      width: 400px;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px 12px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      color: #1e1e1e;
+      cursor: pointer;
+
+      .title {
+        font-size: 1rem;
+        height: 30%;
+        width: 100%;
+
+        @media (max-width: 768px) {
+          font-size: 0.7rem;
+        }
+      }
+      .sub-text {
+        font-size: 0.8rem;
+        height: 70%;
+        width: 100%;
+
+        @media (max-width: 768px) {
+          font-size: 0.6rem;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      div {
+        width: 50%;
+        height: 100%;
+        padding: 0;
+      }
+
+      &.whatsapp {
+        background-color: #d8f5d6;
+      }
+
+      &.instagram {
+        background-color: #f8e1fb;
+      }
+
+      &.x {
+        background-color: #eee9e9;
+      }
+
+      &.facebook {
+        background-color: #d3e4fa;
+      }
+    }
+  }
+}

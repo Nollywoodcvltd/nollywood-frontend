@@ -1,0 +1,78 @@
+.about {
+  width: 100%;
+  overflow: hidden;
+
+  h2,
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 992px) {
+    h2,
+    h3 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .about-us {
+    padding: 50px 15px;
+    font-family: Arial, sans-serif;
+    // color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    h2,
+    h3 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .lead {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 16px;
+
+      @media screen and (min-width: 992px) {
+        font-size: 18px;
+      }
+    }
+
+    .mission-section,
+    .vision-section,
+    .team-section {
+      margin-bottom: 50px;
+    }
+
+    .team-section {
+      display: flex;
+      flex-direction: column-reverse;
+
+      @media screen and (min-width: 992px) {
+        flex-direction: row;
+      }
+    }
+
+    .mission-section img,
+    .team-section img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .mission-section,
+      .team-section {
+        text-align: center;
+      }
+    }
+  }
+}

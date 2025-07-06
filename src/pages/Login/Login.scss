@@ -1,0 +1,115 @@
+
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  width: 90%;
+  max-width: 1100px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.login-image {
+  background: url('../../../public/assets/SAVE_20250309_131715.jpg') no-repeat center center;
+  // background: url('../../assets/Login-img.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.login-form {
+  background: #f8f9fa;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+
+  span {
+    color: #ffb332;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: none;
+    &.big-screen {
+      color: #fff;
+      display: block;
+      padding: 50px;
+    }
+  }
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #514f4f;
+  img {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+
+.divider {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line {
+  width: 45%;
+  height: 1px;
+  background-color: #514f4f;
+}
+
+.form-label {
+  text-align: left;
+  width: 100%;
+  &.paswword {
+    margin-top: 25px;
+  }
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #ffb332;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  &:hover {
+    background-color: #fda205;
+  }
+}
+
+.forgot-password-link,
+.signup-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  position: relative;
+
+  a {
+    color: #ffb332;
+    text-decoration: none;
+  }
+}
+
+.forgot-password-link {
+  text-align: right;
+}
+
+.signup-link {
+  text-align: left;
+}
