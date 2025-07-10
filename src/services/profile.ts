@@ -11,7 +11,7 @@ import {
 } from '../types';
 
 // export const baseUrl = "http://localhost:3000"
-export const baseUrl = 'https://nollywood-api.onrender.com';
+export const baseUrl = 'https://nollywood-api-5jn6.onrender.com';
 
 const loggedAppUser = JSON.parse(localStorage.getItem('loggedAppUser') || '{}');
 export const token = loggedAppUser.token;

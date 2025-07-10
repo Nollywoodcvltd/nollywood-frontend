@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { NewUser, UpdatePasswordData, User } from '../types';
-const baseUrl = 'https://nollywood-api.onrender.com/api/users';
+const baseUrl = 'https://nollywood-api-5jn6.onrender.com/api/users';
 // const baseUrl = 'http://localhost:3000/api/users';
 
 const loggedAppUser = JSON.parse(localStorage.getItem('loggedAppUser') || '{}');
